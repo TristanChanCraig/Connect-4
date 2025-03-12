@@ -111,7 +111,7 @@ public class Connect4 {
         if (row == 5 && column == 4) textField41.setText(chip);
         if (row == 5 && column == 5) textField42.setText(chip);
         if (row == 5 && column == 6) textField43.setText(chip);
-        changeBoard(row, column, chip);
+        if (row != -1) changeBoard(row, column, chip);
         System.out.println(winCondition());
         if (winCondition()) {
             if (turn == 0) textField1.setText("White Wins! Start Over ->");
@@ -125,38 +125,46 @@ public class Connect4 {
     private void changeBoard(int row, int col, String chip) { board[row][col] = chip; }
     private void changeTurns() { turn = (turn == 0) ? 1 : 0; }
     public boolean winCondition() {
-        try {
-            // Row
-            for (int r = 0; r < board.length; r++) {
-                for (int c = 0; c < board[0].length - 3; c++) {
-                    if ((board[r][c].equals(board[r][c+1]) && board[r][c+1].equals(board[r][c+2]))
-                            && (board[r][c+2].equals(board[r][c+3]))) return true;
-                    System.out.println("hi");
+        // Row
+        for (int r = 0; r < board.length; r++) {
+            for (int c = 0; c < board[0].length - 3; c++) {
+                if (!Objects.equals(board[r][c], "") && !Objects.equals(board[r][c+1], "")
+                && !Objects.equals(board[r][c+2], "") && !Objects.equals(board[r][c+3], "")) {
+                    if ((board[r][c].equals(board[r][c + 1]) && board[r][c + 1].equals(board[r][c + 2]))
+                            && (board[r][c + 2].equals(board[r][c + 3]))) return true;
                 }
             }
-            // Column
-            for (int r = 0; r < board.length - 3; r++) {
-                for (int c = 0; c < board[0].length; c++) {
-                    if ((board[r][c].equals(board[r+1][c]) && board[r+1][c].equals(board[r+2][c]))
-                            && (board[r+2][c].equals(board[r+3][c]))) return true;
+        }
+        // Column
+        for (int r = 0; r < board.length - 3; r++) {
+            for (int c = 0; c < board[0].length; c++) {
+                if (!Objects.equals(board[r][c], "") && !Objects.equals(board[r+1][c], "")
+                        && !Objects.equals(board[r+2][c], "") && !Objects.equals(board[r+3][c], "")) {
+                    if ((board[r][c].equals(board[r + 1][c]) && board[r + 1][c].equals(board[r + 2][c]))
+                            && (board[r + 2][c].equals(board[r + 3][c]))) return true;
                 }
             }
-            // Left-Right Diagonal
-            for (int r = 0; r < board.length - 3; r++) {
-                for (int c = 0; c < board[0].length - 3; c++) {
-                    if ((board[r][c].equals(board[r+1][c+1]) && board[r+1][c+1].equals(board[r+2][c+2]))
-                            && (board[r+2][c+2].equals(board[r+3][c+3]))) return true;
+        }
+        // Left-Right Diagonal
+        for (int r = 0; r < board.length - 3; r++) {
+            for (int c = 0; c < board[0].length - 3; c++) {
+                if (!Objects.equals(board[r][c], "") && !Objects.equals(board[r+1][c+1], "")
+                        && !Objects.equals(board[r+2][c+2], "") && !Objects.equals(board[r+3][c+3], "")) {
+                    if ((board[r][c].equals(board[r + 1][c + 1]) && board[r + 1][c + 1].equals(board[r + 2][c + 2]))
+                            && (board[r + 2][c + 2].equals(board[r + 3][c + 3]))) return true;
                 }
             }
-            // Right-Left Diagonal
-            for (int r = 0; r < board.length - 3; r++) {
-                for (int c = 0; c < board[0].length - 3; c++) {
-                    if ((board[r][c+3].equals(board[r+1][c+2]) && board[r+1][c+2].equals(board[r+2][c+1]))
-                            && (board[r+2][c+1].equals(board[r+3][c]))) return true;
+        }
+        // Right-Left Diagonal
+        for (int r = 0; r < board.length - 3; r++) {
+            for (int c = 0; c < board[0].length - 3; c++) {
+                if (!Objects.equals(board[r][c+3], "") && !Objects.equals(board[r+1][c+2], "")
+                        && !Objects.equals(board[r+2][c+1], "") && !Objects.equals(board[r+3][c], "")) {
+                    if ((board[r][c + 3].equals(board[r + 1][c + 2]) && board[r + 1][c + 2].equals(board[r + 2][c + 1]))
+                            && (board[r + 2][c + 1].equals(board[r + 3][c]))) return true;
                 }
             }
-        } catch (NullPointerException ignored) {}
-
+        }
         // Default Condition
         return false;
     }
@@ -164,7 +172,7 @@ public class Connect4 {
     public boolean drawCondition() {
         for (String[] r : board)
             for (String c : r)
-                if (c == null) return false;
+                if (Objects.equals(c, "")) return false;
         return true;
     }
 
@@ -173,7 +181,49 @@ public class Connect4 {
             for (int c = 0; c < board[0].length; c++)
                 board[r][c] = "";
         turn = 0;
-        // TODO: reset all text boxes to ""
+        textField1.setText("");
+        textField2.setText("");
+        textField3.setText("");
+        textField4.setText("");
+        textField5.setText("");
+        textField6.setText("");
+        textField7.setText("");
+        textField8.setText("");
+        textField9.setText("");
+        textField10.setText("");
+        textField11.setText("");
+        textField12.setText("");
+        textField13.setText("");
+        textField14.setText("");
+        textField15.setText("");
+        textField16.setText("");
+        textField17.setText("");
+        textField18.setText("");
+        textField19.setText("");
+        textField20.setText("");
+        textField21.setText("");
+        textField22.setText("");
+        textField23.setText("");
+        textField24.setText("");
+        textField25.setText("");
+        textField26.setText("");
+        textField27.setText("");
+        textField28.setText("");
+        textField29.setText("");
+        textField30.setText("");
+        textField31.setText("");
+        textField32.setText("");
+        textField33.setText("");
+        textField34.setText("");
+        textField35.setText("");
+        textField36.setText("");
+        textField37.setText("");
+        textField38.setText("");
+        textField39.setText("");
+        textField40.setText("");
+        textField41.setText("");
+        textField42.setText("");
+        textField43.setText("");
     }
 
     public Connect4() {
@@ -188,7 +238,6 @@ public class Connect4 {
         });
         dropButton1.addActionListener(new ActionListener() {
             @Override
-
             public void actionPerformed(ActionEvent e) {
                 drop(1, turn);
             }
