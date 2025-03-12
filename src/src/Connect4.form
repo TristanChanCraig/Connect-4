@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Connect4">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="8" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1114" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="24691" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="cf1d7" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="d9da2" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="79ed4" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="98233" class="javax.swing.JTextField" binding="textField6" default-binding="true">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="94250" class="javax.swing.JTextField" binding="textField7" default-binding="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="c5ebc" class="javax.swing.JTextField" binding="textField8" default-binding="true">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="c40da" class="javax.swing.JTextField" binding="textField9" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="f3b8b" class="javax.swing.JTextField" binding="textField10" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="8a0b1" class="javax.swing.JTextField" binding="textField11" default-binding="true">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="14a6f" class="javax.swing.JTextField" binding="textField12" default-binding="true">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="c1781" class="javax.swing.JTextField" binding="textField13" default-binding="true">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="70b60" class="javax.swing.JTextField" binding="textField14" default-binding="true">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="f419f" class="javax.swing.JTextField" binding="textField15" default-binding="true">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="1e1e5" class="javax.swing.JTextField" binding="textField16" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="96877" class="javax.swing.JTextField" binding="textField17" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="bb170" class="javax.swing.JTextField" binding="textField18" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="a4be" class="javax.swing.JTextField" binding="textField19" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="20c2b" class="javax.swing.JTextField" binding="textField20" default-binding="true">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="216d9" class="javax.swing.JTextField" binding="textField21" default-binding="true">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="7197a" class="javax.swing.JTextField" binding="textField22" default-binding="true">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="496dc" class="javax.swing.JTextField" binding="textField23" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="aea54" class="javax.swing.JTextField" binding="textField24" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="8e08c" class="javax.swing.JTextField" binding="textField25" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="df329" class="javax.swing.JTextField" binding="textField26" default-binding="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="6b9b9" class="javax.swing.JTextField" binding="textField27" default-binding="true">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="f9685" class="javax.swing.JTextField" binding="textField28" default-binding="true">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="227ad" class="javax.swing.JTextField" binding="textField29" default-binding="true">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="af5a4" class="javax.swing.JTextField" binding="textField30" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="bfedb" class="javax.swing.JTextField" binding="textField31" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="3c037" class="javax.swing.JTextField" binding="textField32" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="7b2c2" class="javax.swing.JTextField" binding="textField33" default-binding="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="5df0d" class="javax.swing.JTextField" binding="textField34" default-binding="true">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="f4ef6" class="javax.swing.JTextField" binding="textField35" default-binding="true">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="139f4" class="javax.swing.JTextField" binding="textField36" default-binding="true">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="c3199" class="javax.swing.JTextField" binding="textField37" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="6403" class="javax.swing.JTextField" binding="textField38" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="dfefa" class="javax.swing.JTextField" binding="textField39" default-binding="true">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="1ceae" class="javax.swing.JTextField" binding="textField40" default-binding="true">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="c19dd" class="javax.swing.JTextField" binding="textField41" default-binding="true">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="9a757" class="javax.swing.JTextField" binding="textField42" default-binding="true">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="3b7fe" class="javax.swing.JTextField" binding="textField43" default-binding="true">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="b58ce" class="javax.swing.JButton" binding="dropButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="cb290" class="javax.swing.JButton" binding="dropButton1" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="7b5fb" class="javax.swing.JButton" binding="dropButton2" default-binding="true">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="8fb13" class="javax.swing.JButton" binding="dropButton3" default-binding="true">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="5391b" class="javax.swing.JButton" binding="dropButton4" default-binding="true">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="1e98a" class="javax.swing.JButton" binding="dropButton5" default-binding="true">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="de769" class="javax.swing.JButton" binding="dropButton6" default-binding="true">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Drop"/>
+        </properties>
+      </component>
+      <component id="76e32" class="javax.swing.JButton" binding="resetButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Reset"/>
+        </properties>
+      </component>
+      <component id="e78c4" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
