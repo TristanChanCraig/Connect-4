@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
@@ -66,60 +67,61 @@ public class Connect4 {
         return -1;
     }
 
-    public void drop(int column, int turn) {
-        String chip = (turn == 0) ? "○" : "⬤";
-        int row = checkLowestSpot(column);
-        if (row == 0 && column == 0) textField2.setText(chip);
-        if (row == 0 && column == 1) textField3.setText(chip);
-        if (row == 0 && column == 2) textField4.setText(chip);
-        if (row == 0 && column == 3) textField5.setText(chip);
-        if (row == 0 && column == 4) textField6.setText(chip);
-        if (row == 0 && column == 5) textField7.setText(chip);
-        if (row == 0 && column == 6) textField8.setText(chip);
-        if (row == 1 && column == 0) textField9.setText(chip);
-        if (row == 1 && column == 1) textField10.setText(chip);
-        if (row == 1 && column == 2) textField11.setText(chip);
-        if (row == 1 && column == 3) textField12.setText(chip);
-        if (row == 1 && column == 4) textField13.setText(chip);
-        if (row == 1 && column == 5) textField14.setText(chip);
-        if (row == 1 && column == 6) textField15.setText(chip);
-        if (row == 2 && column == 0) textField16.setText(chip);
-        if (row == 2 && column == 1) textField17.setText(chip);
-        if (row == 2 && column == 2) textField18.setText(chip);
-        if (row == 2 && column == 3) textField19.setText(chip);
-        if (row == 2 && column == 4) textField20.setText(chip);
-        if (row == 2 && column == 5) textField21.setText(chip);
-        if (row == 2 && column == 6) textField22.setText(chip);
-        if (row == 3 && column == 0) textField23.setText(chip);
-        if (row == 3 && column == 1) textField24.setText(chip);
-        if (row == 3 && column == 2) textField25.setText(chip);
-        if (row == 3 && column == 3) textField26.setText(chip);
-        if (row == 3 && column == 4) textField27.setText(chip);
-        if (row == 3 && column == 5) textField28.setText(chip);
-        if (row == 3 && column == 6) textField29.setText(chip);
-        if (row == 4 && column == 0) textField30.setText(chip);
-        if (row == 4 && column == 1) textField31.setText(chip);
-        if (row == 4 && column == 2) textField32.setText(chip);
-        if (row == 4 && column == 3) textField33.setText(chip);
-        if (row == 4 && column == 4) textField34.setText(chip);
-        if (row == 4 && column == 5) textField35.setText(chip);
-        if (row == 4 && column == 6) textField36.setText(chip);
-        if (row == 5 && column == 0) textField37.setText(chip);
-        if (row == 5 && column == 1) textField38.setText(chip);
-        if (row == 5 && column == 2) textField39.setText(chip);
-        if (row == 5 && column == 3) textField40.setText(chip);
-        if (row == 5 && column == 4) textField41.setText(chip);
-        if (row == 5 && column == 5) textField42.setText(chip);
-        if (row == 5 && column == 6) textField43.setText(chip);
-        if (row != -1) changeBoard(row, column, chip);
-        System.out.println(winCondition());
+    public void drop(int column) {
+        if (!winCondition()) {
+            String chip = (turn == 0) ? "○" : "⬤";
+            int row = checkLowestSpot(column);
+            if (row == 0 && column == 0) textField2.setText(chip);
+            if (row == 0 && column == 1) textField3.setText(chip);
+            if (row == 0 && column == 2) textField4.setText(chip);
+            if (row == 0 && column == 3) textField5.setText(chip);
+            if (row == 0 && column == 4) textField6.setText(chip);
+            if (row == 0 && column == 5) textField7.setText(chip);
+            if (row == 0 && column == 6) textField8.setText(chip);
+            if (row == 1 && column == 0) textField9.setText(chip);
+            if (row == 1 && column == 1) textField10.setText(chip);
+            if (row == 1 && column == 2) textField11.setText(chip);
+            if (row == 1 && column == 3) textField12.setText(chip);
+            if (row == 1 && column == 4) textField13.setText(chip);
+            if (row == 1 && column == 5) textField14.setText(chip);
+            if (row == 1 && column == 6) textField15.setText(chip);
+            if (row == 2 && column == 0) textField16.setText(chip);
+            if (row == 2 && column == 1) textField17.setText(chip);
+            if (row == 2 && column == 2) textField18.setText(chip);
+            if (row == 2 && column == 3) textField19.setText(chip);
+            if (row == 2 && column == 4) textField20.setText(chip);
+            if (row == 2 && column == 5) textField21.setText(chip);
+            if (row == 2 && column == 6) textField22.setText(chip);
+            if (row == 3 && column == 0) textField23.setText(chip);
+            if (row == 3 && column == 1) textField24.setText(chip);
+            if (row == 3 && column == 2) textField25.setText(chip);
+            if (row == 3 && column == 3) textField26.setText(chip);
+            if (row == 3 && column == 4) textField27.setText(chip);
+            if (row == 3 && column == 5) textField28.setText(chip);
+            if (row == 3 && column == 6) textField29.setText(chip);
+            if (row == 4 && column == 0) textField30.setText(chip);
+            if (row == 4 && column == 1) textField31.setText(chip);
+            if (row == 4 && column == 2) textField32.setText(chip);
+            if (row == 4 && column == 3) textField33.setText(chip);
+            if (row == 4 && column == 4) textField34.setText(chip);
+            if (row == 4 && column == 5) textField35.setText(chip);
+            if (row == 4 && column == 6) textField36.setText(chip);
+            if (row == 5 && column == 0) textField37.setText(chip);
+            if (row == 5 && column == 1) textField38.setText(chip);
+            if (row == 5 && column == 2) textField39.setText(chip);
+            if (row == 5 && column == 3) textField40.setText(chip);
+            if (row == 5 && column == 4) textField41.setText(chip);
+            if (row == 5 && column == 5) textField42.setText(chip);
+            if (row == 5 && column == 6) textField43.setText(chip);
+            if (row != -1) changeBoard(row, column, chip);
+            changeTurns();
+        }
         if (winCondition()) {
-            if (turn == 0) textField1.setText("White Wins! Start Over ->");
-            else textField1.setText("Black Wins! Start Over ->");
+            if (turn == 1) textField1.setText("White Wins! Start Over ->");
+            if (turn == 0) textField1.setText("Black Wins! Start Over ->");
         } else if (drawCondition()) {
             textField1.setText("Draw! Start Over ->");
         }
-        changeTurns();
     }
 
     private void changeBoard(int row, int col, String chip) { board[row][col] = chip; }
@@ -177,6 +179,7 @@ public class Connect4 {
     }
 
     public void reset() {
+        // TODO: Center text, make textfields resizable, increase font to size, make the drop button display a down arrow instead of "drop"
         for (int r = 0; r < board.length; r++)
             for (int c = 0; c < board[0].length; c++)
                 board[r][c] = "";
@@ -233,43 +236,49 @@ public class Connect4 {
         dropButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(0, turn);
+                drop(0);
             }
         });
         dropButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(1, turn);
+                drop(1);
             }
         });
         dropButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(2, turn);
+                drop(2);
             }
         });
         dropButton3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(3, turn);
+                drop(3);
             }
         });
         dropButton4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(4, turn);
+                drop(4);
             }
         });
         dropButton5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(5, turn);
+                drop(5);
             }
         });
         dropButton6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                drop(6, turn);
+                drop(6);
+            }
+        });
+        resetButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                reset();
             }
         });
     }
