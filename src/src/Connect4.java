@@ -159,7 +159,9 @@ public class Connect4 {
             c.setPreferredSize(buttonDimension);
             c.setMinimumSize(buttonDimension);
             c.setMaximumSize(buttonDimension);
-            if (c instanceof JTextField && c != textField1) {
+            if (c instanceof JButton) {
+                c.setForeground(Color.WHITE);
+            } else if (c instanceof JTextField && c != textField1) {
                 ((JTextField) c).setText("");
                 c.setFont(new Font("MONOSPACED", Font.PLAIN, 100)); // Referenced from https://stackoverflow.com/questions/1043872/are-there-any-built-in-methods-in-java-to-increase-font-size
                 ((JTextField) c).setHorizontalAlignment(JTextField.CENTER); // Referenced from https://stackoverflow.com/questions/15507639/how-do-i-center-a-jtextfield
