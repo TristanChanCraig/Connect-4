@@ -350,7 +350,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -362,7 +362,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -374,7 +374,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -386,7 +386,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -398,7 +398,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -410,7 +410,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -422,7 +422,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="↓"/>
@@ -434,7 +434,7 @@
         </constraints>
         <properties>
           <background color="-15724108"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Yu Gothic UI Semibold" size="50"/>
           <foreground color="-16777216"/>
           <text value="Reset"/>
@@ -446,6 +446,7 @@
         </constraints>
         <properties>
           <editable value="false"/>
+          <font name="Symbol" size="48" style="1"/>
           <text value=""/>
         </properties>
       </component>
