@@ -69,7 +69,6 @@ public class Connect4 {
     }
 
     private void drop(int column) {
-        // fix switching turn when additional button pressed
         int row = checkLowestSpot(column);
         if (!winCondition() && row != -1) {
             int cnt = 0;
@@ -149,7 +148,6 @@ public class Connect4 {
     }
 
     private void reset() {
-        // TODO: Center text, make textfields resizable, increase font to size, make the drop button display a down arrow instead of "drop"
         for (int r = 0; r < board.length; r++)
             for (int c = 0; c < board[0].length; c++)
                 board[r][c] = "";
